@@ -1,0 +1,86 @@
+@import "colors";
+
+$fontweight: ("100":100,
+ "200":200,
+ "300":300,
+ "400":400,
+ "500":500,
+ "600":600,
+ "700":700,
+ "800":800,
+ "900":900,
+);
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ font-weight: normal;
+}
+
+@for $i from 1 through 4 {
+
+ .text-#{$i} {
+  font-size:#{$i}em;
+ }
+
+}
+
+
+.text-center {
+ text-align: center;
+}
+
+.text-left {
+ text-align: left;
+}
+
+.text-right {
+ text-align: right;
+}
+
+// $fontweight: ("100":100,
+//  "200":200,
+//  "300":300,
+//  "400":400,
+//  "500":500,
+//  "600":600,
+//  "700":700,
+//  "800":800,
+//  "900":900,
+// );
+
+// Font Weight
+@each $fontweight,
+$i in $fontweight {
+ .font-weight-#{$i} {
+  font-weight:#{$i};
+ }
+}
+
+.text-bold {
+ font-weight: 600;
+}
+
+.text-normal {
+ font-weight: 400;
+}
+
+.text-info {
+ color: $info;
+}
+
+.text-black {
+ color: $black;
+}
+
+.text-darkgrey {
+ color: $dark-grey;
+}
+
+.text-white {
+ color: #fff;
+}
+
+.text-grey {
+ color: $grey;
+}
