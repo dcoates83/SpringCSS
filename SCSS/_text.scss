@@ -12,16 +12,33 @@ $fontweight: ("100":100,
 );
 
 body {
- font-family: Arial, Helvetica, sans-serif;
+ font-family: Arial, Helvetica, sans-serif, sans-serif;
+ ;
  font-size: 14px;
  font-weight: normal;
+
 }
 
-@for $i from 1 through 4 {
+@for $i from 1 through 40 {
 
  .text-#{$i} {
-  font-size:#{$i}em;
+  font-size:#{$i}px;
  }
+
+ // .text-#{$i}-5 {
+ //  font-size: ($i + .5)* 1px;
+
+ // }
+
+ // .text-#{$i}-25 {
+ //  font-size: ($i + .25)* 1px;
+
+ // }
+
+ // .text-#{$i}-75 {
+ //  font-size: ($i + .75)* 1px;
+
+ // }
 
 }
 
@@ -83,4 +100,12 @@ $i in $fontweight {
 
 .text-grey {
  color: $grey;
+}
+
+.text-danger {
+ color: $danger;
+}
+
+.text-muted {
+ color: $muted;
 }
