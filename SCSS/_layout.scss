@@ -153,6 +153,10 @@ $xl-width: 1400px;
  align-items: flex-start;
 }
 
+.flex-direction-col{
+ flex-direction: column;
+}
+
 
 .row {
  display: grid;
